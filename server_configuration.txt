@@ -1,0 +1,83 @@
+终端远程连接
+ssh root@xxx.xxx.xxx.xxx
+exit
+
+groupadd admin
+useradd xxx -g admin
+passwd xxx
+ssh xxx@xxx.xxx.xxx.xxx
+
+cd /etc
+vim sudoers
+添加用户权限
+：wq!
+
+cd /etc/ssh
+vim sshd_config
+取消root登录
+：wq
+systemctl restart sshd.service
+
+mysql 
+
+sudo yum -y install httpd httpd-manual mod_ssl mod_perl mod_auth_mysql
+
+wget http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
+sudo yum -y install mysql57-community-release-el7-10.noarch.rpm
+sudo yum -y install mysql-community-server
+
+sudo systemctl start mysqld
+
+sudo mysql -uroot -p
+
+sudo create database pbootcms; 
+
+python3
+
+python --version
+mkdir py3
+sudo yum -y install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel zlib-devel libffi-devel MySQL-python mysql-devel
+在官网获取python链接
+wget https://....python-x.x.x.tgz
+tar -zxvf python-x.x.x.tgz
+cd python-x.x.x
+cd /usr/local/
+sudo mkdir python3
+cd py3
+cd python-x.x.x
+./configure --prefix=/usr/local/python3/
+make
+sudo make install
+sudo ln -s /usr/local/python3/bin/python3 /usr/bin/python3
+sudo ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
+cd ~
+sudo rm -rf py3
+sudo pip3 install mysqlclient
+
+sudo pip3 install django
+sudo ln -s /usr/local/python3/bin/django-admin /usr/bin
+
+cd /home/
+sudo mkdir xxx
+cd xxx
+sudo django-admin startproject xxx
+sudo yum -y install tree
+cd xxx
+sudo mv xxx xxx
+写页面
+cd..
+sudo python3 manage.py migrate
+sudo python3 manage.py runserver 0.0.0.0:80
+
+
+
+
+
+
+
+
+
+
+
+
+
