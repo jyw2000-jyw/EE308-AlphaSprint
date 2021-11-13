@@ -1,0 +1,20 @@
+usernameinput:function(e){
+    console.log(e);
+    var val=e.detail.value;
+    if (val!=''){
+      this.setData({
+        username:val
+      })
+      if(this.data.password !=""){
+        this.setData({
+          loginbtnstate:false
+        })
+      }
+      else{
+        this.setData({
+          loginbtnstate:true
+        })
+      }
+
+    } 
+  },
