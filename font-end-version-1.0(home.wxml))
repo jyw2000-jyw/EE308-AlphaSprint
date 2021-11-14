@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<view  class="content">
+<view class="fengez"></view><!--分割线-->
+  <button id="touxiangbtn" type="primary" class ="touxiangbtn"
+    bindtap="touxiang"></button>
+  <view class="wenzi">
+  <image class="duihua"src="/image/4.png"></image>
+  <view class="boss">
+  <text class="nihao">\n欢迎来到我的城堡！孩子们。\n点击底下的房子进入我的仓库，\n点击底下的血条进入我的关注，\n准备好开始冒险了吗！</text>
+  </view>
+  </view>
+  <view class="fengeo"></view><!--分割线-->
+
+    <image class="juese"  src="/image/像素1.png"></image>
+  <view class="xiaji">
+     <button id ="kubtn"type="primary" class="kubtn" 
+    bindtap="ku"><image class="fangzi" src="/image/房子1.png"></image></button>
+    <button id="guanzhubtn" type="primary" class="guanzhubtn" 
+    bindtap="guanzhu"> <view class="xuetiao"><image class="xin" src='/image/爱心.png'> </image>  <image class="xin" src='/image/爱心.png'></image>  <image class="xin" src='/image/爱心.png'></image></view></button>
+  </view> 
+</view>
