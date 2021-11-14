@@ -32,6 +32,14 @@ sudo mysql -uroot -p
 
 sudo create database pbootcms; 
 
+node.js
+wget https://npm.taobao.org/mirrors/node/v12.4.0/node-v12.4.0-linux-x64.tar.xz
+tar -xvf node-v12.4.0-linux-x64.tar.xz
+mv node-v12.4.0-linux-x64/ /usr/local/node
+echo "export PATH=$PATH:/usr/local/node/bin" >> /etc/profile
+source /etc/profile
+
+
 python3
 
 python --version
@@ -69,7 +77,10 @@ cd..
 sudo python3 manage.py migrate
 sudo python3 manage.py runserver 0.0.0.0:80
 
-
+安装uwsgi 和 nginx
+sudo pip3 install uwsgi
+sudo ln -s /usr/local/python3/bin/uwsgi /usr/bin/uwsgi3
+sudo yum -y install nginx
 
 
 
