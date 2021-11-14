@@ -1,0 +1,30 @@
+  sub(res){
+    var usernameinput =res.detail.value.usernameinput
+    var passwordinput=res.detail.value.passwordinput
+    console.log(usernameinput,passwordinput)
+    db.collection("project").get({
+      success:res=>{
+        console.log(res)
+        this.setData({
+          list:res.data
+        })
+        } 
+      }),
+    db.collection("project").add({
+      data:{
+      usernameinput:usernameinput,
+      passwordinput:passwordinput
+      },    
+    })
+    db.collection("project").get({
+      success:res=>{
+        console.log(res)
+        this.setData({
+          datalist:res.data.slice(-1)
+        })
+        } 
+      }),
+    wx.navigateTo({
+      url: '../home/home',
+    })
+  },
