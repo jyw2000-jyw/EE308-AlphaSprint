@@ -1,0 +1,97 @@
+/* pages/home/home.wxss */
+.content{
+  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 350px;
+  height: 500px;
+}
+.xuetiao{
+  display: flex;
+  flex-direction: row;
+
+}
+.xin{
+  width: 80rpx;
+  height: 80rpx;
+  
+}
+.fangzi{
+  width: 85rpx;
+  height: 85rpx;
+}
+.wenzi{
+  width:500px ;
+  height: 200px;
+}
+.boss{
+    padding-top: 40px;
+    padding-left:70px; 
+}
+.nihao{
+
+  position: relative;
+  z-index: 2;
+  font-size: 15px;
+}
+.duihua{
+  margin-top: 40px;
+  margin-left:50px;
+  margin-right: 50px;
+  width: 240px;
+  height:150px;
+  z-index: 1;
+  position:absolute;
+
+}
+.juese{
+  margin-left:70px ;
+  width: 200px;
+  height: 200px;
+}
+.xiaji{
+  display: flex;
+  flex-direction: row;
+}
+#guanzhubtn{
+    height: 100rpx !important;
+    width: 200px  !important;
+    color: black  !important;
+    background-color:white !important;
+    font-size: 20px !important;
+    padding-left: 50px;
+
+}
+#touxiangbtn{
+  height: 10px !important;
+  width: 200px !important;
+  color: black  !important;
+  background-color:white !important;
+  font-size: 20px !important;
+  border: 20px;
+
+  margin-top: 0px;
+}
+#kubtn{
+  height: 70px !important;
+  width: 100px  !important;
+  color:black  !important;
+  background-color:white !important;
+  font-size: 20px !important;
+  margin-left: 40px;
+}
+
+.fengez{
+  border: 2rpx solid#cccccc;
+  margin-top:  0px;
+  width: 200px;
+  opacity: 0;
+  margin-left: 50px;
+}
+.fengef{
+  border: 2rpx solid#cccccc;
+  margin-top:  10px;
+  width: 200px;
+  opacity: 0;
+  margin-left: 50px;
+}
