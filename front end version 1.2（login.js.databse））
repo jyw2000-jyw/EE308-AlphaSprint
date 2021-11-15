@@ -1,0 +1,78 @@
+var that=this;
+// const db=wx.cloud.database()
+Page({
+  data: {
+    datalist:[],
+    list:[],
+  },
+  usernameinput:function(e){
+    console.log(e);
+    var val=e.detail.value;
+    if (val!=''){
+      this.setData({
+        username:val
+      })
+      if(this.data.password !=""){
+        this.setData({
+          loginbtnstate:false
+        })
+      }
+      else{
+        this.setData({
+          loginbtnstate:true
+        })
+      }
+
+    } 
+  },
+  passwordinput:function(e){
+    var val=e.detail.value;
+    if (val!=''){
+      this.setData({
+        password:val
+      });
+      if(this.data.username !=""){
+        this.setData({
+          loginbtnstate:false
+        })
+      }
+    }
+      else{
+        this.setData({
+          loginbtnstate:true
+        })
+      
+     }
+  },  
+  //*将用户输入的数据存到数据库中
+  sub(res){
+    // var usernameinput =res.detail.value.usernameinput
+    // var passwordinput=res.detail.value.passwordinput
+    // console.log(usernameinput,passwordinput)
+    // db.collection("project").get({
+    //   success:res=>{
+    //     console.log(res)
+    //     this.setData({
+    //       list:res.data
+    //     })
+    //     } 
+    //   }),
+    // // db.collection("project").add({
+    // //   data:{
+    // //   usernameinput:usernameinput,
+    // //   passwordinput:passwordinput
+    // //   },    
+    // // })
+    // db.collection("project").get({
+    //   success:res=>{
+    //     console.log(res)
+    //     this.setData({
+    //       datalist:res.data.slice(-1)
+    //     })
+    //     } 
+    //   }),
+    wx.navigateTo({
+      url: '../home/home',
+    })
+  },
+})
