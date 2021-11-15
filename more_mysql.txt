@@ -1,0 +1,30 @@
+show databases;
+show tables；
+create database test;
+use test；
+show tables；
+ CREATE TABLE person(
+    -> name VARCHAR(20),
+    -> sex CHAR(1),
+    -> birth DATE,
+    -> death DATE,
+    -> cimmit VARCHAR(1000));
+show tables；
+
+mysql> describe person;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| name   | varchar(20)   | YES  |     | NULL    |       |
+| sex    | char(1)       | YES  |     | NULL    |       |
+| birth  | date          | YES  |     | NULL    |       |
+| death  | date          | YES  |     | NULL    |       |
+| cimmit | varchar(1000) | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+INSERT INTO person
+    -> VALUES ('NN','N','01-2-3',NULL,NULL);
+
+select * from person;
+
