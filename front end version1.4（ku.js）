@@ -1,0 +1,42 @@
+const db=wx.cloud.database()
+Page({
+  data: {
+  datalist:""
+  },
+  liuyan() {
+    wx.navigateTo({
+      url: '../kuliuyan/kuliuyan', 
+    })
+   },
+
+   shangchuanbtn(event) {
+
+    let maliao=event.currentTarget.dataset.maliao;
+    wx.navigateTo({
+      url:'../kushangchuan/kushangchuan?maliaoaaa'+maliao.aaa
+    })
+   },
+  onLoad: function () {
+    db.collection("project").get({
+      success:res=>{
+        console.log(res)
+        this.setData({
+          datalist:res.data
+        })
+        }
+      })
+
+  },
+  onHide: function () {
+
+  },
+  onPullDownRefresh: function () {
+
+  },
+  onReachBottom: function () {
+
+  },
+  onShareAppMessage: function () {
+
+  }
+})
