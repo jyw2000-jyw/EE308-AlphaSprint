@@ -1,0 +1,25 @@
+const db=wx.cloud.database()
+Page({
+  data: {
+    list:[],
+  },
+  liuyan:function() {
+    onclick=(wx.navigateTo({
+      url: '../gzliuyan/gzliuyan',
+    }))
+   },
+  shangchuan(){
+    db.collection("project").get({
+      success:res=>{
+        console.log(res)
+        this.setData({
+          list:res.data
+        })
+      }
+    })
+    onclick=(wx.navigateTo({
+      url: '../gzshangchuan/gzshangchuan',
+    }))
+    }
+  
+})
