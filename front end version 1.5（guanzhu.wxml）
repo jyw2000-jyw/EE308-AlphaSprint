@@ -1,0 +1,19 @@
+<!--pages/guanzhu/guanzhu.wxml-->
+<!--pages/ku/ku.wxml-->
+<view class="content">  
+  <view class="title">我的关注</view>
+  <navigator class="project" >
+  <view class="xiangmu">项目1
+    <view class="xiaji">
+     <button class="shouchang"style="font-size: 10px !important;"bindtap="shouchang">收藏</button>
+      <button class="eye"style="font-size: 10px !important;" bindtap="eye">浏览量</button>
+      <button class="liuyan"style="font-size: 10px !important;" bindtap="liuyan">留言
+      </button>
+      <button  bindtap="shangchuan"style="font-size: 10px !important">上传</button>
+    </view>
+
+
+  </view>
+  </navigator> 
+</view>
+
