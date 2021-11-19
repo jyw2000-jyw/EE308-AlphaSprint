@@ -1,0 +1,20 @@
+<!--pages/ku/ku.wxml-->
+<view class="content">  
+  <view class="title"><image class="ku" bindtap="chengbao" src="/image/城堡1.png"></image></view>
+      <view class="xiangmu" wx:for="{{1}}" >
+        <image class="qiang" src="/image/主楼3.png"></image>
+        <view class="xm">项目1</view>
+        <view class="xiaji" >
+        <view class="shouchang" ><image class="jinbi" src="/image/金币.png"></image>
+        <view class="sc"><text class="shc">收\n藏</text></view>
+        </view>
+        <view class="liuyan"><image class="emo" src="/image/金币.png"></image>
+        <view class="liu"><text class="ly">留\n言</text></view>
+        </view>
+        <view class="shangchuan" bindtap="shangchuanbtn"wx:key="usernameinput" data-maliao="{{item}}"><image class="xin" src="/image/金币.png"></image>
+        <view class="sh"><text class="sha">上\n传</text></view>
+        </view>        
+        </view>
+      </view>
+    <view class="cao" wx:for="{{7-1}}"> <image class="di" src="/image/草地2.png"></image></view>
+</view>
