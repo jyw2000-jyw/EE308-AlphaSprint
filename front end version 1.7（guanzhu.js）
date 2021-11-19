@@ -1,0 +1,41 @@
+const db=wx.cloud.database()
+Page({
+  data: {
+  datalist:""
+  },
+  liuyan() {
+    wx.navigateTo({
+      url: '../gzliuyan/gzliuyan', 
+    })
+   },
+ onLoad: function () {
+    db.collection("project").get({
+      success:res=>{
+        console.log(res)
+        this.setData({
+          datalist:res.data
+        })
+        }
+      })
+
+  },
+   shangchuanbtn(event) {
+    let maliao=event.currentTarget.dataset.maliao;
+    wx.navigateTo({
+      url:'/pages/gzshangchuan/gzshangchuan?maliaoaaa='+maliao.usernameinput
+    })
+   },
+ 
+  onHide: function () {
+
+  },
+  onPullDownRefresh: function () {
+
+  },
+  onReachBottom: function () {
+
+  },
+  onShareAppMessage: function () {
+
+  }
+})
