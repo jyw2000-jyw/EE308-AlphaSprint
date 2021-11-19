@@ -1,0 +1,5 @@
+/* pages/phone/phone.wxss */
+
+input{
+  border: 1rpx solid rgb(245, 245, 32);
+}
