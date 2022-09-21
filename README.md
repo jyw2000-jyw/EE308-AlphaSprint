@@ -21,3 +21,5 @@ Last, thanks for the help of my project supervisor ZhangDong(Fuzhou University, 
 4. Development Language: Python, wxml, JavaScript 
 5. Main Functions: **The Mini Program can recommend the users favored project based on the searching history of them**
 6. Technical Points: **DNN(Deep Neural Network)**
+
+Recommendation system has always been a technical field that I am interested in. I took this opportunity to make improvements in this project and hope to make more progress in the future
