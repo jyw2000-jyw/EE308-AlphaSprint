@@ -1,4 +1,4 @@
-# EE308-AlphaSprint
+# EE308-Software Engineering-Project AlphaSprint
 
 ## Development of Github User Service by WeChat Mini Program (Vesion 1.0)
 
