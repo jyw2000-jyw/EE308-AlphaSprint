@@ -22,4 +22,4 @@ Last, thanks for the help of my project supervisor ZhangDong(Fuzhou University, 
 5. Main Functions: **The Mini Program can recommend the users favored project based on the searching history of them**
 6. Technical Points: **DNN(Deep Neural Network)**
 
-What I want to say: Recommendation system has always been a technical area that I have been interested in, so I took the opportunity to make improvements in this project. Through independent learning, I have referred to many professional documents and materials, but my limited ability can only achieve the current level. I hope I can make more progress in the future!
+What I want to say: Recommendation system has always been a technical area that I have been interested in, so I took the opportunity to make improvements in this project. Through independent learning, I have referred to many professional documents and materials. But I can only achieve the current level due to my limited ability. I hope I can make more progress in the future!
