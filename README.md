@@ -1,18 +1,15 @@
-# EE308-Software Engineering-Project AlphaSprint
+# Github User Service WeChat Mini Program Development
 
-## About
-### Project Name
-Github User Service WeChat Mini Program
+## Main Functions
+**a.** Project progress update prompt  
+**b.** Basic information queries of the user repository, such as stars, commits, and forks.
 
+## Technologies
 ### Development Tools & Framework
 WeChatDeveloper, Pycharm, MySQL, Django
 
 ### Development Language
 Python, wxml, JavaScript
-
-### Main Functions
-**a.** Project progress update prompt  
-**b.** Basic information queries of the user repository, such as stars, commits, and forks.
 
 ### Technical Points
 Data crawler, API interface calls, Database, Data transmission, front-end interface design
