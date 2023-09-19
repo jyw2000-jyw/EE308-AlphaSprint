@@ -22,4 +22,4 @@ Last, thanks for the help of my project supervisor [**Prof. Zhang Dong**](https:
 
 Reach out more from:  
 <a href='https://blog.csdn.net/weixin_47282404/category_11471014.html?spm=1001.2014.3001.5482'><img src='https://img.shields.io/badge/Blog-CSDN-red'></a> 
-[![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://www.bilibili.com/video/BV14h41147g5/?spm_id_from=333.999.0.0&vd_source=b1c84c67bda99a952a8215816a221df5)
+<a href='https://www.bilibili.com/video/BV14h41147g5/?spm_id_from=333.999.0.0&vd_source=b1c84c67bda99a952a8215816a221df5'><img src='https://img.shields.io/badge/Demo-Bilibili-blue'></a>
